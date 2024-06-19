@@ -1,0 +1,8 @@
+#!/run/media/echo/8218270e-9a1b-4121-9cd8-49ecb29ddb65/echokurniawan/Gender_Predictor--main/myenv/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from flask.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
